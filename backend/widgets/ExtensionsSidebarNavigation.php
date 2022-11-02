@@ -1,0 +1,42 @@
+<?php
+
+namespace backend\widgets;
+
+use Yii;
+use yii\helpers\Html;
+use yii\helpers\Url;
+
+class ExtensionsSidebarNavigation extends \yii\base\Widget
+{
+    public $items;
+
+    public function init()
+    {
+        parent::init();
+        
+        $this->items = Yii::$app->extensions->getNavigationItems();
+    }
+
+    public function run()
+    {
+	    echo '<ul class="sidebar-navigation">';
+	    
+	    if (!empty($items = $this->items)) {
+		    echo '<li class="head">Erweiterungen</li>';
+		    foreach ($items as $name => $label) {
+			    $active = (strstr(Yii::$app->controller->getRoute(), '/', true) == $name);
+			    
+			    if ($active) {
+				    $addActiveClass = ' class="active"';
+			    } else {
+				    $addActiveClass = (string) null;
+			    }
+			    
+			    echo '<li'.$addActiveClass.'><a href="'.Url::to(['/'.$name]).'">'.$label.'</a></li>';
+		    }
+		}
+		echo '</ul>';
+    }
+}
+
+?>

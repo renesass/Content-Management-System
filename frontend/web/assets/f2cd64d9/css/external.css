@@ -1,0 +1,25 @@
+p {
+	margin-bottom: 18px;
+}
+
+.wrapper {
+	width: 380px;
+	margin: 54px auto;
+	position: relative;	
+	padding: 0px 18px;
+}
+
+@media only screen and (max-width: 380px)	{
+	.wrapper { 
+		width: auto; 
+	} 
+}
+
+.panel.panel-default .panel-heading.colored-primary {
+	background-color: #389fa7;
+	color: #ffffff;
+}
+
+#forgot-pw {
+	text-align: center;
+}

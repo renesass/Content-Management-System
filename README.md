@@ -1,6 +1,7 @@
 # Content Management System
 
-A content management system written in PHP on Yii2 basis. The complete code has been written by myself. Code will be uploaded soon.
+A content management system written in PHP on Yii2 and sqlite basis. The complete code/design/database structure has 
+been designed, planned, and written by me. The project was developed part-time in year 2017.
 
 
 ## Features

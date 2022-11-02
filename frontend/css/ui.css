@@ -1,0 +1,126 @@
+/* general */
+
+p { margin-bottom: 18px; }
+
+.no-margin { margin: 0px !important; }
+.no-margin-bottom { margin-bottom: 0px; }
+.no-padding { padding: 0px !important; }
+.no-padding-bottom { padding-bottom: 0px; }
+.no-padding-right { padding-right: 0px !important; }
+.no-padding-left { padding-left: 0px !important; }
+.no-border { border: 0px !important; }
+.no-display { display: none; }
+div:empty { display: none; }
+
+.margin-bottom { margin: 0px 0px 18px 0px; }
+.margin-bottom-sm { margin: 0px 0px 9px 0px; }
+
+.padding { padding: 18px; }
+.padding-bottom { padding-bottom: 18px; }
+.padding-bottom-sm { padding-bottom: 9px; }
+
+.border-bottom { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid #eeeeee; }
+
+
+/* alerts */
+
+#alerts {
+	margin-bottom: 18px;
+}
+
+.alert {
+	margin-bottom: 9px;
+}
+
+
+/* active record */
+
+.form-group {
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+label {
+	color: #343434;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+label.control-label {
+	margin-bottom: 6px;
+}
+
+.hint-block {
+	margin: -4px 0px 6px;
+	font-size: 12px;
+	color: #888888;
+}
+
+.help-block {
+	margin: 6px 0px 0px 0px;
+	font-size: 12px;
+}
+
+.radio, .checkbox {
+	margin: 0px;
+}
+
+.checkbox .hint-block {
+	margin: 2px 0px 0px;
+}
+
+.radio + .radio, .checkbox + .checkbox {
+	margin: 0px;
+}
+
+div.required label.control-label:after {
+	font-size: 10px;
+    content: " *";
+    color: #e12222;
+}
+
+
+/* headlines */
+
+h1 {
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+	margin: 0px 0px 18px;
+}
+
+h2 {
+	margin: 27px 0px 18px;
+}
+
+.sub-title {
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+
+/* table */
+
+.table > thead > tr > th {
+	font-weight: 600;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	padding: 18px;
+	border-top: none;
+	border-bottom: 1px solid #eeeeee;
+}
+
+td.fit {
+	white-space: nowrap;
+	width: 1%;
+}
+
+
+/* panel */
+
+.panel {
+	margin-bottom: 18px;
+}
